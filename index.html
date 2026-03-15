@@ -1,0 +1,756 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Portfolio of Vamshi Krishna Bharadwaj Valluri – CS (Data Science) student and aspiring ML researcher." />
+  <title>Vamshi Krishna Bharadwaj Valluri | Portfolio</title>
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Fira+Code:wght@400;500&display=swap" rel="stylesheet" />
+
+  <!-- Font Awesome for icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+
+  <!-- Main Stylesheet -->
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- ============================================================
+       NAVIGATION BAR
+       Fixed top navbar with smooth-scroll links
+  ============================================================ -->
+  <nav id="navbar">
+    <div class="nav-container">
+      <a href="#hero" class="nav-logo">VK<span>.</span></a>
+      <ul class="nav-links">
+        <li><a href="#about">About</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#education">Education</a></li>
+        <li><a href="#experience">Experience</a></li>
+        <li><a href="#certifications">Certs</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+      <!-- Hamburger for mobile -->
+      <button class="hamburger" id="hamburger" aria-label="Toggle navigation">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- Mobile nav drawer -->
+  <div class="mobile-menu" id="mobile-menu">
+    <ul>
+      <li><a href="#about" class="mobile-link">About</a></li>
+      <li><a href="#skills" class="mobile-link">Skills</a></li>
+      <li><a href="#projects" class="mobile-link">Projects</a></li>
+      <li><a href="#education" class="mobile-link">Education</a></li>
+      <li><a href="#experience" class="mobile-link">Experience</a></li>
+      <li><a href="#certifications" class="mobile-link">Certifications</a></li>
+      <li><a href="#contact" class="mobile-link">Contact</a></li>
+    </ul>
+  </div>
+
+  <main>
+
+    <!-- ============================================================
+         HERO SECTION
+         Name, title, short intro, CTA buttons, avatar
+    ============================================================ -->
+    <section id="hero">
+      <!-- Animated background grid -->
+      <div class="hero-bg-grid"></div>
+
+      <div class="hero-container">
+        <!-- Left: Text content -->
+        <div class="hero-text" data-animate="fade-up">
+          <p class="hero-greeting">Hi there, I'm</p>
+          <h1 class="hero-name">Vamshi Krishna<br /><span>Bharadwaj Valluri</span></h1>
+          <div class="hero-typewriter">
+            <span id="typewriter-text"></span><span class="cursor">|</span>
+          </div>
+          <p class="hero-intro">
+            Third-year CS (Data Science) student passionate about research-driven
+            problem solving, ML systems, and statistical reasoning.
+          </p>
+          <div class="hero-buttons">
+            <a href="assets/resume.pdf" download="Vamshi_Resume_2026.pdf" class="btn btn-primary">
+              <i class="fas fa-download"></i> Download Resume
+            </a>
+            <a href="#contact" class="btn btn-outline">
+              <i class="fas fa-envelope"></i> Contact Me
+            </a>
+          </div>
+        </div>
+
+        <!-- Right: Avatar -->
+        <div class="hero-avatar" data-animate="fade-left">
+          <div class="avatar-ring">
+            <div class="avatar-inner">
+              <span class="avatar-initials">VK</span>
+            </div>
+          </div>
+          <!-- Floating badges -->
+          <div class="badge badge-python"><i class="fab fa-python"></i> Python</div>
+          <div class="badge badge-ml"><i class="fas fa-brain"></i> ML</div>
+          <div class="badge badge-data"><i class="fas fa-chart-bar"></i> Data Science</div>
+        </div>
+      </div>
+
+      <!-- Scroll indicator -->
+      <a href="#about" class="scroll-down" aria-label="Scroll down">
+        <span></span>
+      </a>
+    </section>
+
+    <!-- ============================================================
+         ABOUT ME SECTION
+         Short bio extracted from resume + interests & goals
+    ============================================================ -->
+    <section id="about" class="section">
+      <div class="container">
+        <div class="section-header" data-animate="fade-up">
+          <h2 class="section-title">About <span>Me</span></h2>
+          <div class="section-line"></div>
+        </div>
+
+        <div class="about-grid">
+          <!-- Left: Avatar / photo placeholder -->
+          <div class="about-image" data-animate="fade-right">
+            <div class="about-avatar">
+              <span>VK</span>
+            </div>
+            <!-- Quick stats -->
+            <div class="about-stats">
+              <div class="stat-card">
+                <span class="stat-number">3rd</span>
+                <span class="stat-label">Year Student</span>
+              </div>
+              <div class="stat-card">
+                <span class="stat-number">7.6</span>
+                <span class="stat-label">GPA / 10</span>
+              </div>
+              <div class="stat-card">
+                <span class="stat-number">3+</span>
+                <span class="stat-label">Projects</span>
+              </div>
+              <div class="stat-card">
+                <span class="stat-number">3</span>
+                <span class="stat-label">Certifications</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Right: Bio text -->
+          <div class="about-content" data-animate="fade-left">
+            <h3>Who am I?</h3>
+            <p>
+              I'm a third-year Computer Science undergraduate specialising in Data Science at
+              <strong>CR Rao Advanced Institute of Mathematics, Statistics and Computer Science (AIMSCS)</strong>.
+              I have a strong interest in research-oriented problem solving, with hands-on experience
+              in Python-based data analysis and applied statistical reasoning.
+            </p>
+            <p>
+              I actively explore ML and LLM-based systems, focusing on understanding methodologies,
+              underlying assumptions, and real-world limitations — not just running models, but
+              critically evaluating them. I believe rigorous reproducibility and honest interpretation
+              of results are the cornerstones of good data science.
+            </p>
+            <h3>Career Goals</h3>
+            <p>
+              My goal is to contribute to cutting-edge applied ML research, bridging the gap between
+              theoretical ML concepts and practical, ethical deployment. I'm particularly interested
+              in NLP, personality inference, and the intersection of statistics and machine learning.
+            </p>
+
+            <!-- Interests / tags -->
+            <div class="interest-tags">
+              <span class="tag">Machine Learning</span>
+              <span class="tag">NLP</span>
+              <span class="tag">Data Analysis</span>
+              <span class="tag">Statistical Reasoning</span>
+              <span class="tag">LLMs</span>
+              <span class="tag">Research</span>
+              <span class="tag">Blockchain</span>
+              <span class="tag">Quantum Computing</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================================================
+         SKILLS SECTION
+         Categorised into: Languages, ML/Tools, Data & Stats
+    ============================================================ -->
+    <section id="skills" class="section section-dark">
+      <div class="container">
+        <div class="section-header" data-animate="fade-up">
+          <h2 class="section-title">Technical <span>Skills</span></h2>
+          <div class="section-line"></div>
+        </div>
+
+        <div class="skills-grid">
+
+          <!-- Category 1: Programming Languages -->
+          <div class="skill-category" data-animate="fade-up" data-delay="0">
+            <div class="skill-cat-header">
+              <i class="fas fa-code"></i>
+              <h3>Programming Languages</h3>
+            </div>
+            <div class="skill-cards">
+              <div class="skill-card">
+                <i class="fab fa-python"></i>
+                <span>Python</span>
+                <div class="skill-bar"><div class="skill-fill" data-width="90"></div></div>
+              </div>
+              <div class="skill-card">
+                <i class="fas fa-copyright"></i>
+                <span>C++</span>
+                <div class="skill-bar"><div class="skill-fill" data-width="70"></div></div>
+              </div>
+              <div class="skill-card">
+                <i class="fas fa-c"></i>
+                <span>C</span>
+                <div class="skill-bar"><div class="skill-fill" data-width="65"></div></div>
+              </div>
+              <div class="skill-card">
+                <i class="fab fa-java"></i>
+                <span>Java</span>
+                <div class="skill-bar"><div class="skill-fill" data-width="60"></div></div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Category 2: Frameworks / Tools / Libraries -->
+          <div class="skill-category" data-animate="fade-up" data-delay="100">
+            <div class="skill-cat-header">
+              <i class="fas fa-tools"></i>
+              <h3>Frameworks &amp; Tools</h3>
+            </div>
+            <div class="skill-cards">
+              <div class="skill-card">
+                <i class="fas fa-layer-group"></i>
+                <span>NumPy</span>
+                <div class="skill-bar"><div class="skill-fill" data-width="85"></div></div>
+              </div>
+              <div class="skill-card">
+                <i class="fas fa-table"></i>
+                <span>Pandas</span>
+                <div class="skill-bar"><div class="skill-fill" data-width="85"></div></div>
+              </div>
+              <div class="skill-card">
+                <i class="fas fa-robot"></i>
+                <span>scikit-learn</span>
+                <div class="skill-bar"><div class="skill-fill" data-width="75"></div></div>
+              </div>
+              <div class="skill-card">
+                <i class="fas fa-chart-line"></i>
+                <span>Matplotlib / Seaborn</span>
+                <div class="skill-bar"><div class="skill-fill" data-width="80"></div></div>
+              </div>
+              <div class="skill-card">
+                <i class="fab fa-git-alt"></i>
+                <span>Git</span>
+                <div class="skill-bar"><div class="skill-fill" data-width="75"></div></div>
+              </div>
+              <div class="skill-card">
+                <i class="fas fa-code"></i>
+                <span>VS Code</span>
+                <div class="skill-bar"><div class="skill-fill" data-width="90"></div></div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Category 3: Technologies / APIs / Concepts -->
+          <div class="skill-category" data-animate="fade-up" data-delay="200">
+            <div class="skill-cat-header">
+              <i class="fas fa-microchip"></i>
+              <h3>Technologies &amp; APIs</h3>
+            </div>
+            <div class="skill-cards">
+              <div class="skill-card">
+                <i class="fas fa-brain"></i>
+                <span>Gemini API</span>
+                <div class="skill-bar"><div class="skill-fill" data-width="70"></div></div>
+              </div>
+              <div class="skill-card">
+                <i class="fas fa-bolt"></i>
+                <span>Groq API</span>
+                <div class="skill-bar"><div class="skill-fill" data-width="65"></div></div>
+              </div>
+              <div class="skill-card">
+                <i class="fas fa-flask"></i>
+                <span>Applied ML</span>
+                <div class="skill-bar"><div class="skill-fill" data-width="72"></div></div>
+              </div>
+              <div class="skill-card">
+                <i class="fas fa-chart-pie"></i>
+                <span>Statistical Analysis</span>
+                <div class="skill-bar"><div class="skill-fill" data-width="78"></div></div>
+              </div>
+              <div class="skill-card">
+                <i class="fas fa-link"></i>
+                <span>Blockchain (Research)</span>
+                <div class="skill-bar"><div class="skill-fill" data-width="55"></div></div>
+              </div>
+              <div class="skill-card">
+                <i class="fas fa-atom"></i>
+                <span>Quantum Computing (Foundations)</span>
+                <div class="skill-bar"><div class="skill-fill" data-width="45"></div></div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================================================
+         PROJECTS SECTION
+         Three projects from the resume
+    ============================================================ -->
+    <section id="projects" class="section">
+      <div class="container">
+        <div class="section-header" data-animate="fade-up">
+          <h2 class="section-title">My <span>Projects</span></h2>
+          <div class="section-line"></div>
+          <p class="section-subtitle">Research-oriented and data-driven work I've built or explored.</p>
+        </div>
+
+        <div class="projects-grid">
+
+          <!-- Project 1: Credit Card Spending Analysis -->
+          <div class="project-card" data-animate="fade-up" data-delay="0">
+            <div class="project-icon">
+              <i class="fas fa-credit-card"></i>
+            </div>
+            <div class="project-content">
+              <h3 class="project-title">Credit Card Spending Pattern Analysis</h3>
+              <p class="project-desc">
+                Performed hypothesis testing on user spending patterns to identify statistically
+                significant differences between credit and debit card usage. Calculated t-statistics
+                using NumPy at a 95% confidence level, revealing distinct behavioural patterns
+                in payment methods.
+              </p>
+              <ul class="project-highlights">
+                <li>Statistical hypothesis formulation &amp; testing</li>
+                <li>t-statistic calculation with 95% confidence intervals</li>
+                <li>Interpretation of results under real-world data assumptions</li>
+              </ul>
+              <div class="project-tech">
+                <span class="tech-tag">Python</span>
+                <span class="tech-tag">NumPy</span>
+                <span class="tech-tag">Pandas</span>
+                <span class="tech-tag">Matplotlib</span>
+                <span class="tech-tag">Statistics</span>
+              </div>
+              <div class="project-links">
+                <a href="https://github.com/vvkb24/" target="_blank" rel="noopener noreferrer" class="project-btn">
+                  <i class="fab fa-github"></i> GitHub
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Project 2: Big-5 OCEAN Personality Inference -->
+          <div class="project-card featured" data-animate="fade-up" data-delay="100">
+            <div class="project-badge">Featured</div>
+            <div class="project-icon">
+              <i class="fas fa-brain"></i>
+            </div>
+            <div class="project-content">
+              <h3 class="project-title">Text-to-Personality Inference (Big-5 OCEAN)</h3>
+              <p class="project-desc">
+                Critically studied and experimentally explored the methodology in <em>"Personality
+                Traits in Large Language Models"</em> (Safdari et al.) for inferring Big-Five
+                personality traits from text. Analysed theoretical assumptions, trait scoring
+                mechanisms, and ethical limitations of automated personality inference.
+              </p>
+              <ul class="project-highlights">
+                <li>Critical analysis of LLM-based personality trait inference</li>
+                <li>Examined sensitivity to prompt phrasing &amp; linguistic ambiguity</li>
+                <li>Identified open research questions on robustness &amp; interpretability</li>
+                <li>Explored ethical considerations in automated inference</li>
+              </ul>
+              <div class="project-tech">
+                <span class="tech-tag">Python</span>
+                <span class="tech-tag">LLMs</span>
+                <span class="tech-tag">NLP</span>
+                <span class="tech-tag">scikit-learn</span>
+                <span class="tech-tag">Research Analysis</span>
+              </div>
+              <div class="project-links">
+                <a href="https://github.com/vvkb24/text-to-personality-using-big-5-ocean-model" target="_blank" rel="noopener noreferrer" class="project-btn">
+                  <i class="fab fa-github"></i> GitHub
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Project 3: Blockchain + Relational DBs -->
+          <div class="project-card" data-animate="fade-up" data-delay="200">
+            <div class="project-icon">
+              <i class="fas fa-link"></i>
+            </div>
+            <div class="project-content">
+              <h3 class="project-title">Blockchain Integration with Relational Databases</h3>
+              <p class="project-desc">
+                Research analysis on blockchain integration approaches for enhancing security
+                and data integrity in relational database systems. Reviewed academic papers on
+                decentralised architectures, consensus mechanisms, and analysed trade-offs
+                between traditional DB performance and blockchain-based immutability.
+              </p>
+              <ul class="project-highlights">
+                <li>Literature review on decentralised database architectures</li>
+                <li>Analysis of consensus mechanisms</li>
+                <li>Trade-off evaluation: performance vs. immutability</li>
+              </ul>
+              <div class="project-tech">
+                <span class="tech-tag">Blockchain</span>
+                <span class="tech-tag">SQL</span>
+                <span class="tech-tag">Research</span>
+                <span class="tech-tag">Security</span>
+                <span class="tech-tag">Distributed Systems</span>
+              </div>
+              <div class="project-links">
+                <a href="https://github.com/vvkb24/" target="_blank" rel="noopener noreferrer" class="project-btn">
+                  <i class="fab fa-github"></i> GitHub
+                </a>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================================================
+         EDUCATION SECTION
+    ============================================================ -->
+    <section id="education" class="section section-dark">
+      <div class="container">
+        <div class="section-header" data-animate="fade-up">
+          <h2 class="section-title">My <span>Education</span></h2>
+          <div class="section-line"></div>
+        </div>
+
+        <div class="timeline">
+
+          <!-- B.Tech -->
+          <div class="timeline-item" data-animate="fade-right">
+            <div class="timeline-dot"></div>
+            <div class="timeline-content">
+              <div class="timeline-header">
+                <div>
+                  <h3>B.Tech in Computer Science (Data Science)</h3>
+                  <p class="timeline-org">CR Rao Advanced Institute of Mathematics, Statistics and Computer Science (AIMSCS)</p>
+                </div>
+                <div class="timeline-meta">
+                  <span class="timeline-date"><i class="fas fa-calendar"></i> Aug 2023 – May 2027 (Expected)</span>
+                  <span class="timeline-gpa"><i class="fas fa-star"></i> GPA: 7.6 / 10</span>
+                </div>
+              </div>
+              <p class="timeline-detail">
+                Specialising in Data Science with coursework in statistics, machine learning,
+                data structures &amp; algorithms, database systems, and programming.
+              </p>
+              <div class="coursework-tags">
+                <span class="tag">Data Structures &amp; Algorithms</span>
+                <span class="tag">Machine Learning</span>
+                <span class="tag">Statistics &amp; Probability</span>
+                <span class="tag">Database Systems</span>
+                <span class="tag">Python Programming</span>
+                <span class="tag">Data Analysis</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Class 12 -->
+          <div class="timeline-item" data-animate="fade-right">
+            <div class="timeline-dot"></div>
+            <div class="timeline-content">
+              <div class="timeline-header">
+                <div>
+                  <h3>Class 12th – Science (MPC)</h3>
+                  <p class="timeline-org">S R Junior College</p>
+                </div>
+                <div class="timeline-meta">
+                  <span class="timeline-date"><i class="fas fa-calendar"></i> 2020 – 2022</span>
+                  <span class="timeline-gpa"><i class="fas fa-star"></i> 89.8%</span>
+                </div>
+              </div>
+              <p class="timeline-detail">
+                Completed intermediate education with a focus on Mathematics, Physics, and Chemistry.
+              </p>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================================================
+         EXPERIENCE / LEADERSHIP SECTION
+    ============================================================ -->
+    <section id="experience" class="section">
+      <div class="container">
+        <div class="section-header" data-animate="fade-up">
+          <h2 class="section-title">Leadership &amp; <span>Experience</span></h2>
+          <div class="section-line"></div>
+        </div>
+
+        <div class="timeline">
+
+          <div class="timeline-item" data-animate="fade-right">
+            <div class="timeline-dot"></div>
+            <div class="timeline-content">
+              <div class="timeline-header">
+                <div>
+                  <h3>Batch Representative</h3>
+                  <p class="timeline-org">CR Rao AIMSCS</p>
+                </div>
+                <div class="timeline-meta">
+                  <span class="timeline-date"><i class="fas fa-calendar"></i> Aug 2023 – Present</span>
+                  <span class="timeline-badge active">Active</span>
+                </div>
+              </div>
+              <p class="timeline-detail">
+                Serving as the elected representative for two batches, acting as the primary
+                liaison between students and faculty. Responsible for communicating student
+                concerns, facilitating issue resolution, and ensuring effective coordination
+                between academic and administrative bodies.
+              </p>
+              <div class="contributions">
+                <div class="contribution-item">
+                  <i class="fas fa-check-circle"></i>
+                  <span>Primary liaison between two student batches and faculty</span>
+                </div>
+                <div class="contribution-item">
+                  <i class="fas fa-check-circle"></i>
+                  <span>Facilitated issue resolution and effective communication</span>
+                </div>
+                <div class="contribution-item">
+                  <i class="fas fa-check-circle"></i>
+                  <span>Maintained transparency between administrative and student bodies</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+        <!-- Open to opportunities callout -->
+        <div class="opportunities-card" data-animate="fade-up">
+          <i class="fas fa-rocket"></i>
+          <div>
+            <h3>Open to Internships &amp; Research Opportunities</h3>
+            <p>I'm actively looking for internship roles and collaborative research projects in Machine Learning, Data Science, and NLP.</p>
+          </div>
+          <a href="#contact" class="btn btn-primary">Get in Touch</a>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ============================================================
+         CERTIFICATIONS / ACHIEVEMENTS SECTION
+    ============================================================ -->
+    <section id="certifications" class="section section-dark">
+      <div class="container">
+        <div class="section-header" data-animate="fade-up">
+          <h2 class="section-title">Certifications &amp; <span>Achievements</span></h2>
+          <div class="section-line"></div>
+        </div>
+
+        <div class="certs-grid">
+
+          <div class="cert-card" data-animate="fade-up" data-delay="0">
+            <div class="cert-icon">
+              <i class="fab fa-google"></i>
+            </div>
+            <div class="cert-content">
+              <h3>Google AI Essentials</h3>
+              <p class="cert-issuer">Google</p>
+              <p class="cert-desc">Foundational course covering AI concepts, responsible AI practices, and practical tools for leveraging AI in workflows.</p>
+              <span class="cert-year">2024</span>
+            </div>
+            <div class="cert-ribbon">Course Certificate</div>
+          </div>
+
+          <div class="cert-card" data-animate="fade-up" data-delay="100">
+            <div class="cert-icon">
+              <i class="fas fa-atom"></i>
+            </div>
+            <div class="cert-content">
+              <h3>Quantum Computing: Algorithms &amp; Applications</h3>
+              <p class="cert-issuer">Online Course</p>
+              <p class="cert-desc">Covered quantum computing fundamentals including qubits, quantum gates, quantum algorithms, and their real-world applications.</p>
+              <span class="cert-year">2024</span>
+            </div>
+            <div class="cert-ribbon">Course Certificate</div>
+          </div>
+
+          <div class="cert-card" data-animate="fade-up" data-delay="200">
+            <div class="cert-icon">
+              <i class="fas fa-robot"></i>
+            </div>
+            <div class="cert-content">
+              <h3>Workshop on AI with Machine Learning</h3>
+              <p class="cert-issuer">Workshop Organiser</p>
+              <p class="cert-desc">Hands-on workshop covering practical AI and ML concepts, spanning supervised/unsupervised learning and model evaluation techniques.</p>
+              <span class="cert-year">2024</span>
+            </div>
+            <div class="cert-ribbon">Workshop Certificate</div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================================================
+         CONTACT SECTION
+         Email, LinkedIn, GitHub, static contact form
+    ============================================================ -->
+    <section id="contact" class="section">
+      <div class="container">
+        <div class="section-header" data-animate="fade-up">
+          <h2 class="section-title">Get In <span>Touch</span></h2>
+          <div class="section-line"></div>
+          <p class="section-subtitle">I'm open to research collaborations, internships, and interesting conversations. Feel free to reach out!</p>
+        </div>
+
+        <div class="contact-grid">
+
+          <!-- Left: Contact info -->
+          <div class="contact-info" data-animate="fade-right">
+            <h3>Contact Information</h3>
+            <p>Whether you want to collaborate on a project, discuss research ideas, or just say hi — my inbox is always open.</p>
+
+            <div class="contact-items">
+              <a href="mailto:vamshikbharadwaj@gmail.com" class="contact-item">
+                <div class="contact-icon"><i class="fas fa-envelope"></i></div>
+                <div>
+                  <span class="contact-label">Email</span>
+                  <span class="contact-value">vamshikbharadwaj@gmail.com</span>
+                </div>
+              </a>
+
+              <a href="https://www.linkedin.com/in/vamshi-krishna-bharadwaj-valluri-16727a2b5/" target="_blank" rel="noopener noreferrer" class="contact-item">
+                <div class="contact-icon linkedin"><i class="fab fa-linkedin-in"></i></div>
+                <div>
+                  <span class="contact-label">LinkedIn</span>
+                  <span class="contact-value">linkedin.com/in/vamshi-krishna-bharadwaj-valluri-16727a2b5/</span>
+                </div>
+              </a>
+
+              <a href="https://github.com/vvkb24/" target="_blank" rel="noopener noreferrer" class="contact-item">
+                <div class="contact-icon github"><i class="fab fa-github"></i></div>
+                <div>
+                  <span class="contact-label">GitHub</span>
+                  <span class="contact-value">github.com/vvkb24</span>
+                </div>
+              </a>
+
+              <div class="contact-item no-link">
+                <div class="contact-icon phone"><i class="fas fa-phone"></i></div>
+                <div>
+                  <span class="contact-label">Phone</span>
+                  <span class="contact-value">+91 9177044626</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Right: Static contact form (no server needed) -->
+          <div class="contact-form-wrapper" data-animate="fade-left">
+            <form class="contact-form" id="contact-form" action="https://formspree.io/f/YOUR_FORM_ID" method="POST">
+              <!-- Replace YOUR_FORM_ID with actual Formspree ID for live use -->
+              <div class="form-group">
+                <label for="name">Your Name</label>
+                <input type="text" id="name" name="name" placeholder="John Doe" required />
+              </div>
+              <div class="form-group">
+                <label for="email">Your Email</label>
+                <input type="email" id="email" name="email" placeholder="john@example.com" required />
+              </div>
+              <div class="form-group">
+                <label for="subject">Subject</label>
+                <input type="text" id="subject" name="subject" placeholder="Research Collaboration" required />
+              </div>
+              <div class="form-group">
+                <label for="message">Message</label>
+                <textarea id="message" name="message" rows="5" placeholder="Tell me about the opportunity or idea..." required></textarea>
+              </div>
+              <button type="submit" class="btn btn-primary btn-full">
+                <i class="fas fa-paper-plane"></i> Send Message
+              </button>
+              <p class="form-note">
+                <i class="fas fa-info-circle"></i>
+                To activate the contact form, sign up at <a href="https://formspree.io" target="_blank" rel="noopener noreferrer">Formspree</a> and replace <code>YOUR_FORM_ID</code> in the form action URL. Alternatively, contact me directly via email.
+              </p>
+            </form>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ============================================================
+       FOOTER
+       Social links, copyright, built-with message
+  ============================================================ -->
+  <footer id="footer">
+    <div class="footer-container">
+      <div class="footer-brand">
+        <a href="#hero" class="footer-logo">VK<span>.</span></a>
+        <p>CS (Data Science) Student &bull; ML Enthusiast &bull; Researcher</p>
+      </div>
+
+      <div class="footer-links">
+        <h4>Quick Links</h4>
+        <ul>
+          <li><a href="#about">About</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-social">
+        <h4>Connect</h4>
+        <div class="social-icons">
+          <a href="https://github.com/vvkb24/" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
+            <i class="fab fa-github"></i>
+          </a>
+          <a href="https://www.linkedin.com/in/vamshi-krishna-bharadwaj-valluri-16727a2b5/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
+            <i class="fab fa-linkedin-in"></i>
+          </a>
+          <a href="mailto:vamshikbharadwaj@gmail.com" aria-label="Email">
+            <i class="fas fa-envelope"></i>
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <p>&copy; 2026 Vamshi Krishna Bharadwaj Valluri. All rights reserved.</p>
+      <p>Built with <span class="heart">❤️</span> by Vamshi Krishna Bharadwaj Valluri</p>
+    </div>
+  </footer>
+
+  <!-- Back-to-top button -->
+  <button id="back-to-top" aria-label="Back to top">
+    <i class="fas fa-arrow-up"></i>
+  </button>
+
+  <!-- Main Script -->
+  <script src="script.js"></script>
+</body>
+</html>
